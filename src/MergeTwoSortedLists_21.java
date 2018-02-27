@@ -1,4 +1,7 @@
-public class MergeTwoSortedLists_21 {
+import java.util.ArrayList;
+import java.util.List;
+
+public class MergeTwoSortedLists_21<T> {
 
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0);
@@ -26,6 +29,10 @@ public class MergeTwoSortedLists_21 {
             l2 = l2.next;
             pointer = pointer.next;
         }
+
+        List<T> list = new ArrayList<T>();
+
+        T[] array;
 
         return dummy.next;
     }
